@@ -11,10 +11,10 @@ Two variants are included:
 **Pip-Boy Amber** -- Fallout New Vegas burnt orange-gold on warm near-black `#0D0800`
 
 ### Pip-Boy (Green)
-<!-- Add screenshot here -->
+<img width="800" alt="Pip-Boy green theme" src="screenshots/pipboy.png" />
 
 ### Pip-Boy Amber
-<!-- Add screenshot here -->
+<img width="800" alt="Pip-Boy Amber theme" src="screenshots/pipboy-amber.png" />
 
 ## Features
 
@@ -61,16 +61,6 @@ loaded via Google Fonts. An internet connection is required on first load for th
 font to render correctly. If running a fully local HA setup, host the font locally
 and update the `@import` URL in `card-mod-root`.
 
-## Upstream Sync
-
-This theme is derived from
-[Nezz/homeassistant-visionos-theme](https://github.com/Nezz/homeassistant-visionos-theme).
-To pull upstream changes:
-```bash
-git fetch upstream
-git checkout upstream/master -- themes/liquid_glass.yaml
-# Apply transformations to regenerate pipboy.yaml
-```
 
 The `liquid_glass.yaml` file is kept as a reference base. Do not edit it directly.
 

@@ -3,6 +3,7 @@
 Copyright (c) 2019 Bas Nijholt\
 Copyright (c) 2024 Adam Kapos\
 Copyright (c) 2025 Wessam Lauf
+Copyright (c) 2026 Joshua Julian
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
