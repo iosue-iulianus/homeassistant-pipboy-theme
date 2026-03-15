@@ -175,10 +175,27 @@ Pip-Boy:
       font-family: "Share Tech Mono", "Courier New", "VT323", monospace !important;
       letter-spacing: 0.05em;
     }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at center,
+        transparent 60%,
+        rgba(0, 0, 0, 0.40) 100%);
+      pointer-events: none;
+      z-index: 9999;
+    }
   card-mod-drawer: |
     .mdc-drawer {
       background-color: rgba(0, 10, 0, 0.92) !important;
       backdrop-filter: var(--ha-card-backdrop-filter);
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.08) 0px,
+        rgba(0, 0, 0, 0.08) 1px,
+        transparent 1px,
+        transparent 2px
+      ) !important;
     }
   card-mod-sidebar: |
     :host {
@@ -218,6 +235,12 @@ Pip-Boy:
       }
       :host(hui-heading-card) ha-card::after {
         content: none !important;
+      }
+
+      /* Phosphor text glow on heading labels */
+      :host(hui-heading-card) {
+        text-shadow: 0 0 8px rgba(18, 255, 21, 0.60),
+                     0 0 2px rgba(18, 255, 21, 0.80) !important;
       }
 
       /* Energy dashboard */
@@ -475,10 +498,27 @@ Pip-Boy Amber:
       font-family: "Share Tech Mono", "Courier New", "VT323", monospace !important;
       letter-spacing: 0.05em;
     }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at center,
+        transparent 60%,
+        rgba(0, 0, 0, 0.40) 100%);
+      pointer-events: none;
+      z-index: 9999;
+    }
   card-mod-drawer: |
     .mdc-drawer {
       background-color: rgba(12, 6, 0, 0.92) !important;
       backdrop-filter: var(--ha-card-backdrop-filter);
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.08) 0px,
+        rgba(0, 0, 0, 0.08) 1px,
+        transparent 1px,
+        transparent 2px
+      ) !important;
     }
   card-mod-sidebar: |
     :host {
@@ -518,6 +558,12 @@ Pip-Boy Amber:
       }
       :host(hui-heading-card) ha-card::after {
         content: none !important;
+      }
+
+      /* Phosphor text glow on heading labels */
+      :host(hui-heading-card) {
+        text-shadow: 0 0 8px rgba(220, 148, 24, 0.60),
+                     0 0 2px rgba(220, 148, 24, 0.80) !important;
       }
 
       /* Energy dashboard */
