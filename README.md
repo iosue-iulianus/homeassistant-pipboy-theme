@@ -62,8 +62,6 @@ font to render correctly. If running a fully local HA setup, host the font local
 and update the `@import` URL in `card-mod-root`.
 
 
-The `liquid_glass.yaml` file is kept as a reference base. Do not edit it directly.
-
 ## Section Headers
 
 The theme automatically applies Pip-Boy partial border chrome (top + right borders)
@@ -102,7 +100,6 @@ card_mod:
 Headers with entity badges (status pips) require the same `card_mod` block.
 The badge styling is handled at the card level -- add your entities to the
 `badges:` list as normal.
-
 
 ## Remarks
 
