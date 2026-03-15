@@ -64,6 +64,46 @@ and update the `@import` URL in `card-mod-root`.
 
 The `liquid_glass.yaml` file is kept as a reference base. Do not edit it directly.
 
+## Section Headers
+
+The theme automatically applies Pip-Boy partial border chrome (top + right borders)
+and phosphor glow to all `type: heading` cards. To match the font, sizing, and
+alignment shown in the screenshots, add the following `card_mod` block to each
+heading card:
+
+```yaml
+type: heading
+heading: ENV DATA
+heading_style: title
+icon: mdi:thermometer
+card_mod:
+  style: |
+    :host {
+      font-family: "Share Tech Mono", "Courier New", monospace !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      text-align: center !important;
+      font-size: 1.5em !important;
+    }
+    * {
+      font-family: "Share Tech Mono", "Courier New", monospace !important;
+      text-align: center !important;
+      font-size: inherit !important;
+    }
+    div, .heading-container {
+      justify-content: center !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+```
+
+Headers with entity badges (status pips) require the same `card_mod` block.
+The badge styling is handled at the card level -- add your entities to the
+`badges:` list as normal.
+
+
 ## Remarks
 
 Derived from [Nezz's visionOS & Liquid Glass Theme](https://github.com/Nezz/homeassistant-visionos-theme)
