@@ -130,6 +130,17 @@ Pip-Boy:
   material-background-color: var(--secondary-background-color)
   mdc-checkbox-unchecked-color: "#005F00"
   mdc-radio-unchecked-color: "#005F00"
+  # Typography -- override MDC/Paper font stacks so Roboto is replaced globally
+  mdc-typography-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-body1-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-body2-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-subtitle1-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-subtitle2-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-headline6-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-button-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-caption-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  mdc-typography-overline-font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
+  paper-font-common-base_-_font-family: '"Share Tech Mono", "Courier New", "VT323", monospace'
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: "#12FF15"
@@ -154,6 +165,16 @@ Pip-Boy:
   wa-color-neutral-fill-normal: "rgba(18, 255, 21, 0.08)" # hover color
 
   card-mod-theme: "Pip-Boy"
+  card-mod-root: |
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+    :host {
+      font-family: "Share Tech Mono", "Courier New", "VT323", monospace !important;
+      letter-spacing: 0.05em;
+    }
+    * {
+      font-family: "Share Tech Mono", "Courier New", "VT323", monospace !important;
+      letter-spacing: 0.05em;
+    }
   card-mod-drawer: |
     .mdc-drawer {
       background-color: rgba(0, 10, 0, 0.92) !important;
