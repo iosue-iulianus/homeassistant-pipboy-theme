@@ -4,11 +4,17 @@ A Fallout Pip-Boy / Vault-Tec terminal aesthetic theme for Home Assistant.
 Derived from [Nezz's visionOS theme](https://github.com/Nezz/homeassistant-visionos-theme),
 rebuilt as a post-apocalyptic CRT phosphor terminal.
 
-Two variants are included:
+Five variants are included:
 
 **Pip-Boy** -- Fallout 3/4 phosphor green on near-black `#0C0C0C`
 
 **Pip-Boy Amber** -- Fallout New Vegas burnt orange-gold on warm near-black `#0D0800`
+
+**Pip-Boy Blue** -- Teal/cyan phosphor on deep blue-black `#00080D`
+
+**Pip-Boy White** -- Cool white P4 phosphor on near-black `#0A0A0A`
+
+**Pip-Boy Purple** -- Atomic purple on deep purple-black `#0A0010`
 
 ### Pip-Boy (Green)
 <img width="800" alt="Pip-Boy green theme" src="screenshots/pipboy.png" />
@@ -16,9 +22,18 @@ Two variants are included:
 ### Pip-Boy Amber
 <img width="800" alt="Pip-Boy Amber theme" src="screenshots/pipboy-amber.png" />
 
+### Pip-Boy Blue
+<img width="800" alt="Pip-Boy Blue theme" src="screenshots/pipboy-blue.png" />
+
+### Pip-Boy White
+<img width="800" alt="Pip-Boy White theme" src="screenshots/pipboy-white.png" />
+
+### Pip-Boy Purple
+<img width="800" alt="Pip-Boy Purple theme" src="screenshots/pipboy-purple.png" />
+
 ## Features
 
-- Phosphor green or amber CRT palette throughout
+- Five phosphor color variants: green, amber, purple, blue, white
 - Scanline overlay on all cards simulating CRT display lines
 - Vignette effect darkening screen edges like a real CRT
 - Subtle phosphor flicker animation on the full interface
@@ -52,7 +67,7 @@ frontend:
 service: frontend.reload_themes
 ```
 
-4. Select **Pip-Boy** or **Pip-Boy Amber** from your profile theme dropdown.
+4. Select **Pip-Boy**, **Pip-Boy Amber**, **Pip-Boy Purple**, **Pip-Boy Blue**, or **Pip-Boy White** from your profile theme dropdown.
 
 ## Font
 
